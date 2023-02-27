@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./build:/usr/share/nginx/html
+      - ./docker/access:/var/log/nginx
+      - ./docker/docker/default.conf:/etc/nginx/conf.d/default.conf
+    expose:
+      - 80
+    networks:
+      - web
+    labels:
+      - "traefik.http.routers.pog_docs_nginx.rule=Host(`pog.wsto.re`, `pog.heaper.de`)"
+      - traefik.http.routers.pog_docs_nginx.tls=true
+      - traefik.http.routers.pog_docs_nginx.tls.certresolver=myresolver
+
+volumes:
+  node_modules_vue:
+networks:
+  web:
+    name: web
