@@ -15,6 +15,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title" style={{color:'white'}}>{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p>pog guides you through the setup of your kmk firmware on compatible keyboards (see requirements). Your fully working custom firmware is only minutes away.</p>
         <img src={pog_screen} alt=""/>
         <div>
           <a className={styles.button} target="_blank" href='https://github.com/janlunge/pog/releases'>Download</a>

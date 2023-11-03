@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Installation
+# Installation of POG
 
 Pog is written in electron, and we have builds supporting Windows & OSX.
 

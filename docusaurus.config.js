@@ -53,11 +53,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/ogimage.png',
+      metadata: [{name: 'description', content: 'Keyboard Firmware made easy'}],
       colorMode:{
         defaultMode: 'dark'
       },
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Pog',
         logo: {
